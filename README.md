@@ -12,11 +12,17 @@ Install Grunt dependencies:
 
     npm install
 
+Run the local server:
+
+    grunt
+
+## Production Builds
+
 Build Grunt project:
 
     grunt build
 
-The compress Grunt task packages the theme files into `dist/<theme-name>.zip`,
+The `compress` Grunt task packages the theme files into `dist/<theme-name>.zip`,
 which you can then upload to your site.
 
     grunt compress
