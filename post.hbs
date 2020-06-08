@@ -80,11 +80,6 @@
 			</section>
 
 
-			<section class="post-comments">
-				<a id="show-disqus" class="post-comments-activate">{{t "Show Comments"}}</a>
-			   <div id="disqus_thread"></div>
-			</section>
-
       {{#if @labs.subscribers}}
       <section class="post-subscribe">
 				<p>{{t "Get the latest posts delivered right to your inbox."}}</p>
@@ -174,23 +169,6 @@
 	      readingProgress();
 	    }
 	  });
-		// Check if disqus is defined by code injection
-		if (typeof disqus === 'undefined') {
-			// hide comment section
-	    $('.post-comments').css({
-	      'display': 'none'
-	    });
-	  } else {
-	    $('#show-disqus').on('click', function() {
-	      $.ajax({
-	        type: "GET",
-	        url: "//" + disqus + ".disqus.com/embed.js",
-	        dataType: "script",
-	        cache: true
-	      });
-	      $(this).parent().addClass('activated');
-	    });
-	  }
   });
 </script>
 {{/contentFor}}
