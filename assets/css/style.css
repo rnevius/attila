@@ -215,10 +215,6 @@ td, th {
 .icon-search:before {
   content: '\e805'; }
 
-/* '' */
-.icon-rss:before {
-  content: '\e807'; }
-
 /* '' */
 .icon-twitter:before {
   content: '\f099'; }
@@ -1490,11 +1486,11 @@ textarea {
       @media only screen and (max-width: 640px) {
         .nav-header li a:focus, .nav-header li a:hover {
           color: #c4c7cc; } }
-  .nav-header li.nav-facebook, .nav-header li.nav-rss, .nav-header li.nav-search, .nav-header li.nav-subscribe, .nav-header li.nav-twitter {
+  .nav-header li.nav-facebook, .nav-header li.nav-search, .nav-header li.nav-subscribe, .nav-header li.nav-twitter {
     margin-right: 1.5rem; }
-    .nav-header li.nav-facebook a, .nav-header li.nav-rss a, .nav-header li.nav-search a, .nav-header li.nav-subscribe a, .nav-header li.nav-twitter a {
+    .nav-header li.nav-facebook a, .nav-header li.nav-search a, .nav-header li.nav-subscribe a, .nav-header li.nav-twitter a {
       font-size: 1.75em; }
-    .nav-header li.nav-facebook span, .nav-header li.nav-rss span, .nav-header li.nav-search span, .nav-header li.nav-subscribe span, .nav-header li.nav-twitter span {
+    .nav-header li.nav-facebook span, .nav-header li.nav-search span, .nav-header li.nav-subscribe span, .nav-header li.nav-twitter span {
       display: none; }
   .nav-header li:last-child {
     margin-right: 0; }
