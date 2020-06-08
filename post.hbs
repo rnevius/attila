@@ -8,12 +8,6 @@
 
 <header class="post-header {{#if feature_image}} has-cover {{/if}}">
 	<div class="inner">
-		<span class="post-info">
-			<span class="post-type">{{t "Article"}}</span>
-			{{#if tags}}
-			<span class="post-count">{{primary_tag.name}}</span>
-			{{/if}}
-		</span>
 		<h1 class="post-title">{{{title}}}</h1>
 		<div class="post-meta">
 			<div class="post-meta-avatars">
@@ -53,32 +47,7 @@
 			</section>
 
 			<section class="post-footer">
-
-				<div class="post-share">
-					<span class="post-info-label">{{t "Share"}}</span>
-					<a title="Twitter" class="twitter" href="https://twitter.com/share?text={{title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-						<i class="icon icon-twitter" aria-hidden="true"></i><span class="hidden">Twitter</span>
-					</a>
-					<a title="Facebook" class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-						<i class="icon icon-facebook" aria-hidden="true"></i><span class="hidden">Facebook</span>
-					</a>
-					<a title="LinkedIn" class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{url absolute="true"}}/&amp;title={{title}}" onclick="window.open(this.href, 'linkedin-share', 'width=930,height=720');return false;">
-						<i class="icon icon-linkedin" aria-hidden="true"></i><span class="hidden">LinkedIn</span>
-					</a>
-					<a title="Email" class="email" href="mailto:?subject={{title}}&amp;body={{url absolute="true"}}">
-						<i class="icon icon-mail" aria-hidden="true"></i><span class="hidden">Email</span>
-					</a>
-				</div>
-
-				{{#if tags}}
-				<aside class="post-tags">
-					<span class="post-info-label">{{t "Topic"}}</span>
-					{{tags separator=" "}}
-				</aside>
-				{{/if}}
-
 			</section>
-
 
       {{#if @labs.subscribers}}
       <section class="post-subscribe">
